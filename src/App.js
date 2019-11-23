@@ -1,19 +1,30 @@
 import React from 'react';
 import './App.css';
-import Posts from './Posts'
-import TopBar from './TopBar';
-import UserProfile from './UserProfile';
-import Contacts from './Contacts';
+import Posts from './Components/Posts'
+import NavBar from './Components/NavBar';
+import UserProfile from './Components/UserProfile';
+import Contacts from './Components/Contacts';
 
-function App() {
-  return (
-    <div className="App">
-      <TopBar />
-      <UserProfile />
-      <Posts />
-      <Contacts />
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    flag: false
+  }
+
+  componentDidMount = () => {
+    this.setState({ flag: true })
+    console.log('componetn mouted')
+  }
+  render() {
+    return (
+      <div className="App">
+        <NavBar />
+        <UserProfile />
+        <Posts />
+        <Contacts />
+        <button onClick={(e) => this.setState(prev => ({ flag: !prev.flag }))}> </button>
+      </div>
+    );
+  }
 }
 
 export default App;

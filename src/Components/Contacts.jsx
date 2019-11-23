@@ -1,5 +1,5 @@
 import React from 'react'
-import UserProfile from './UserProfile';
+import ContactUserCard from './ContactUserCard';
 import './Contacts.css'
 
 class Contacts extends React.Component {
@@ -7,10 +7,10 @@ class Contacts extends React.Component {
         return (
             <div className='Contacts'>
                 <h2>Contacts</h2>
-                <UserProfile />
-                <UserProfile />
-                <UserProfile />
-                <UserProfile />
+                <ContactUserCard />
+                <ContactUserCard />
+                <ContactUserCard />
+                <ContactUserCard />
             </div>
         );
     }

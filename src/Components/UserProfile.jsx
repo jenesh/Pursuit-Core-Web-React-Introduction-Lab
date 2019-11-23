@@ -5,10 +5,11 @@ class UserProfile extends React.Component {
     render() {
         return (
             <div className='UserProfile'>
-                <img 
+                <img
                     src='https://icon-library.net/images/default-profile-icon/default-profile-icon-24.jpg'
                     width='200'
                     height='200'
+                    alt='user profile'
                 >
                 </img>
                 <div className='Description'>

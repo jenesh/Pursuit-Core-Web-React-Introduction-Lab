@@ -1,10 +1,10 @@
 import React from 'react';
-import './TopBar.css';
+import './NavBar.css';
 
-class TopBar extends React.Component {
+class NavBar extends React.Component {
     render() {
         return (
-            <div className='TopBar'>
+            <div className='NavBar'>
                 <button>What is Pursuit?</button>
                 <button>Create an account</button>
                 <button>Sign in</button>
@@ -13,4 +13,4 @@ class TopBar extends React.Component {
     }
 }
 
-export default TopBar;
+export default NavBar;
